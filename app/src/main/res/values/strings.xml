@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DeliveryApp</string>
+    <string name="central_park">225 Central Park West, NY 10024, USA</string>
+    <string name="delivery">Delivery</string>
+    <string name="pickup">Pickup</string>
+    <string name="catering">Catering</string>
+    <string name="curbside">Curbside</string>
+    <string name="find_store_by_name">Find store by name</string>
+    <string name="takeaways">Takeaways</string>
+    <string name="cakes">Cakes</string>
+    <string name="grocery">Grocery</string>
+    <string name="convenience">Convenience</string>
+    <string name="_58">58</string>
+    <string name="stores_open">stores Open</string>
+</resources>

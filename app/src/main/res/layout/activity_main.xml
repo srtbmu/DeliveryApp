@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/ParkWest"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="18dp"
+        android:text="@string/central_park"
+        android:textAlignment="center"
+        android:textColor="@color/textTop"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:drawableEndCompat="@drawable/bottom_vector"
+        app:drawableStartCompat="@drawable/location_vector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecycleDelivery"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ParkWest"
+        tools:listitem="@layout/item_delivery" />
+
+    <EditText
+        android:id="@+id/byName"
+        android:layout_width="387dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="151dp"
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/search"
+        android:drawableEnd="@drawable/ion_options_outline"
+        android:hint="@string/find_store_by_name"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_burger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/byName"
+        tools:listitem="@layout/item_burger" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/_58"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_burger" />
+
+    <TextView
+        android:textStyle="italic"
+        android:textSize="14sp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="42.5dp"
+        android:text="@string/stores_open"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_burger" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
