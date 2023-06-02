@@ -10,20 +10,21 @@
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="16dp"
+        app:cardCornerRadius="24dp"
+        app:cardBackgroundColor="@color/green"
+        android:id="@+id/card_view"
         tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/TextViewDelivery"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/black"
+            android:background="@color/picup"
             android:padding="10dp"
             android:text="@string/delivery"
             android:textColor="@color/white"
             android:textSize="20sp"
-            android:textStyle="bold"
-            app:drawableStartCompat="@drawable/group" />
+            android:textStyle="bold" />
 
     </androidx.cardview.widget.CardView>
 

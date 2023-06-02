@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginTop="18.5dp"
+        android:id="@+id/ImageViewBurger"
+        android:layout_width="387dp"
+        android:layout_height="194.02dp"
+        android:layout_marginStart="13dp"
+        android:src="@drawable/img_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TextViewBurgerCraze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/burger_craze"
+        android:textColor="@color/textBurger"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ImageViewBurger" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/elippes"
+        app:layout_constraintStart_toEndOf="@id/TextViewBurgerCraze"
+        app:layout_constraintTop_toBottomOf="@id/ImageViewBurger" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/open"
+        android:textColor="@color/greentextopen"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/TextViewBurgerCraze"
+        app:layout_constraintTop_toBottomOf="@id/ImageViewBurger" />
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="84dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="11dp"
+        android:background="@color/timecolor"
+        android:gravity="center"
+        android:text="@string/_15_20_min"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ImageViewBurger" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/star"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TextViewBurgerCraze" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34.5dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/_4_6_601"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TextViewBurgerCraze" />
+
+    <TextView
+        android:id="@+id/TextViewAmericanItalic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/american_burgers"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TextViewBurgerCraze" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/delivery_free_minimum_10"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TextViewAmericanItalic" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67.48dp"
+        android:layout_marginEnd="91dp"
+        android:src="@drawable/adres_png"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ImageViewBurger" />
+
+    <TextView
+        android:id="@+id/TextViewAdresKm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="7dp"
+        android:text="1.5 km away"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ImageViewBurger" />
+
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="13dp"-->
+    <!--        android:layout_marginTop="13dp"-->
+    <!--        android:text="."-->
+    <!--        android:textColor="@color/textBurger"-->
+    <!--        android:textSize="24sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/ImageViewBurger"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/TextViewBurgerCraze"-->
+    <!--        />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

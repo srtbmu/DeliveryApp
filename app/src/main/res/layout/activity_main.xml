@@ -75,14 +75,23 @@
         app:layout_constraintTop_toBottomOf="@id/rv_burger" />
 
     <TextView
-        android:textStyle="italic"
-        android:textSize="14sp"
+        android:id="@+id/TextViewstoresOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="42.5dp"
         android:text="@string/stores_open"
-        android:layout_width="wrap_content"
-        android:layout_height="17dp"
+        android:textSize="14sp"
+        android:textStyle="italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/rv_burger" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/TextViewstoresOpen"
+        tools:listitem="@layout/item_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

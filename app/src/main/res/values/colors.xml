@@ -10,4 +10,8 @@
     <color name="textTop">#353536</color>
     <color name="group">#FBBC04</color>
     <color name="picup">#AEADAA</color>
+    <color name="green">#5C9628</color>
+    <color name="textBurger">#373737</color>
+    <color name="greentextopen">#82C446</color>
+    <color name="timecolor">#FFC545</color>
 </resources>

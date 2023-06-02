@@ -8,7 +8,6 @@ import com.example.deliveryapp.databinding.ItemBurgerBinding
 
 class BurgerAdapter(private var list: ArrayList<Burger>) :
     Adapter<BurgerAdapter.BurgerViewHolder>() {
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BurgerViewHolder {
         return BurgerViewHolder(
             ItemBurgerBinding.inflate(
@@ -27,11 +26,10 @@ class BurgerAdapter(private var list: ArrayList<Burger>) :
         return list.size
     }
 
-
     class BurgerViewHolder(private val binding: ItemBurgerBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun onBind(burger: Burger) {
-            burger.image?.let { img->
+            burger.image?.let { img ->
                 binding.imgBurger.setImageResource(img)
             }
             binding.tvBurger.text = burger.name
